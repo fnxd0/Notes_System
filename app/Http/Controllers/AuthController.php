@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function login(){
-        echo "login";
+        return view('auth.login');
     }
-    public function logout(){
-        echo "logout";
+    public function register(){
+        return view('auth.register');
     }
 }

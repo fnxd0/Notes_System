@@ -1,0 +1,48 @@
+/* Paleta */
+:root {
+    --color-1: #868686;
+    --color-2: #676767;
+    --color-3: #494949;
+    --color-4: #2a2a2a;
+    --color-5: #0b0b0b;
+}
+
+body {
+    background-color: var(--color-5);
+    color: #fff;
+}
+
+.custom-header {
+    background-color: var(--color-4);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.custom-card {
+    background-color: var(--color-3);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.custom-input {
+    background-color: var(--color-4);
+    border: 1px solid var(--color-2);
+    color: #fff;
+}
+
+.custom-input:focus {
+    border-color: var(--color-1);
+    box-shadow: 0 0 0 0.2rem rgba(134,134,134,0.25);
+}
+
+.custom-button {
+    background-color: var(--color-2);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: var(--color-1);
+}
