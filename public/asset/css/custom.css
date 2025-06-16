@@ -1,48 +1,107 @@
-/* Paleta */
-:root {
-    --color-1: #868686;
-    --color-2: #676767;
-    --color-3: #494949;
-    --color-4: #2a2a2a;
-    --color-5: #0b0b0b;
-}
-
+/* ---------- Reset ---------- */
 body {
-    background-color: var(--color-5);
-    color: #fff;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ---------- Header ---------- */
 .custom-header {
-    background-color: var(--color-4);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    background-color: #ff7b00;
+    border-bottom: 3px solid black;
 }
 
-.custom-card {
-    background-color: var(--color-3);
-    border: none;
-    border-radius: 12px;
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+/* ---------- Formulário Container ---------- */
+.form-container {
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s;
     width: 100%;
-    max-width: 500px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    max-width: 450px;
 }
 
-.custom-input {
-    background-color: var(--color-4);
-    border: 1px solid var(--color-2);
-    color: #fff;
+.form-container h2 {
+    color: black;
+    font-weight: 700;
 }
 
-.custom-input:focus {
-    border-color: var(--color-1);
-    box-shadow: 0 0 0 0.2rem rgba(134,134,134,0.25);
+/* ---------- Botões ---------- */
+.btn-custom {
+    background-color: #ff7b00;
+    color: white;
+    border: 2px solid;
 }
 
-.custom-button {
-    background-color: var(--color-2);
+.btn-custom:hover {
+    background-color: #e56c00;
+    color: white;
+}
+
+.btn-orange {
+    background-color: #ff6600;
+    color: white;
     border: none;
-    transition: background-color 0.3s ease;
 }
 
-.custom-button:hover {
-    background-color: var(--color-1);
+.btn-orange:hover {
+    background-color: #e65c00;
+    color: white;
+}
+
+.text-orange {
+    color: #ff6600;
+}
+
+.text-orange:hover {
+    color: #e65c00;
+}
+
+/* .form-control{
+    border: var(--bs-border-width) solid var(--bs-border-color) #000000 !important;
+} */
+
+/* ---------- Inputs ---------- */
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255, 102, 0, 0.4);
+    border-color: #ff6600;
+    outline: 0;
+}
+
+.input-group-text {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------- Animações ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
